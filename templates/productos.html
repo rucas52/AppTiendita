@@ -1,9 +1,10 @@
 <ion-view title="Productos" id="page2">
     <ion-content padding="true" class="has-header">
-        <ion-list id="productos-list6">
-            <ion-item id="productos-list-item11">Item 1</ion-item>
-            <ion-item id="productos-list-item12">Item 2</ion-item>
-            <ion-item id="productos-list-item13">Item 3</ion-item>
-        </ion-list>
+       <ion-list>
+            <a class="item" ng-repeat="item in list" href="#/page14/{{ item.id }}">{{item.name}}, {{item.id}}, {{item.price}}, {{item.type}}                
+            </a>
+           
+        </ion-list>                    
+        <button id="page-button2" class=" button button-positive  button-block " ng-click="getProductList()">Listar producto</button>
     </ion-content>
 </ion-view>

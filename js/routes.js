@@ -111,7 +111,7 @@ angular.module('app.routes', [])
   })
 
   .state('menu.detalleDeProducto', {
-    url: '/page14',
+    url: '/page14:id',
     views: {
       'side-menu21': {
         templateUrl: 'templates/detalleDeProducto.html',
