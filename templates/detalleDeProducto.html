@@ -1,13 +1,15 @@
 <ion-view title="Detalle de producto" id="page14">
     <ion-content padding="true" class="has-header">
         <ion-list id="detalleDeProducto-list7">
-            <ion-item id="detalleDeProducto-list-item14">Item 1</ion-item>
-            <ion-item id="detalleDeProducto-list-item15">Item 2</ion-item>
-            <ion-item id="detalleDeProducto-list-item16">Item 3</ion-item>
-            <ion-item id="detalleDeProducto-list-item18">Item</ion-item>
-        </ion-list>
-        <div class="spacer" style="width: 300px; height: 58px;"></div>
-        <a ui-sref="menu.ediciNDeProducto" id="detalleDeProducto-button6" class=" button button-positive  button-block ">Modificar producto</a>
-        <button id="detalleDeProducto-button7" class=" button button-stable  button-block ">Eliminar producto</button>
+            <ion-item id="detalleDeProducto-list-item14">Nombre: {{name}}</ion-item>
+            <ion-item id="detalleDeProducto-list-item15">Tipo: {{type}}</ion-item>
+            <ion-item id="detalleDeProducto-list-item16">Cantidad: {{quantity}}</ion-item>
+            <ion-item id="detalleDeProducto-list-item18">Precio: {{price}}</ion-item>
+            <ion-item id="detalleDeProducto-list-item18">Id: {{id}}</ion-item>
+        </ion-list>       
+
+         <a class="item" href="#/page9/{{ id }}">Actualizar producto</a>
+         <button id="page-button2" class=" button button-positive  button-block " ng-click="deleteProduct()" ng-model="id">Eliminar producto</button>
+         <a class="item" ng-repeat="item in list" href="#/page13">Crear producto</a>
     </ion-content>
 </ion-view>

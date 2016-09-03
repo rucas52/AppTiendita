@@ -1,10 +1,7 @@
 <ion-view title="Productos" id="page2">
     <ion-content padding="true" class="has-header">
-       <ion-list>
-            <a class="item" ng-repeat="item in list" href="#/page14/{{ item.id }}">{{item.name}}, {{item.id}}, {{item.price}}, {{item.type}}                
-            </a>
-           
+       	<ion-list>
+            <a class="item" ng-repeat="item in list" href="#/page14/{{ item.id }}">{{item.name}}</a>
         </ion-list>                    
-        <button id="page-button2" class=" button button-positive  button-block " ng-click="getProductList()">Listar producto</button>
     </ion-content>
 </ion-view>
