@@ -94,15 +94,12 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.ediciNDeProducto', {
-    url: '/page9',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/ediciNDeProducto.html',
-        controller: 'ediciNDeProductoCtrl'
-      }
-    }
+  .state('ediciNDeProducto', {
+    url: '/page9/:id',
+    templateUrl: 'templates/ediciNDeProducto.html',
+    controller: 'ediciNDeProductoCtrl'
   })
+
 
   .state('crearProducto', {
     url: '/page13',
@@ -110,15 +107,13 @@ angular.module('app.routes', [])
     controller: 'crearProductoCtrl'
   })
 
-  .state('menu.detalleDeProducto', {
-    url: '/page14:id',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/detalleDeProducto.html',
-        controller: 'detalleDeProductoCtrl'
-      }
-    }
-  })
+  
+  .state('detalleDeProducto', {
+    url: '/page14/:id',
+    templateUrl: 'templates/detalleDeProducto.html',
+    controller: 'detalleDeProductoCtrl'
+  }) 
+   
 
 $urlRouterProvider.otherwise('/page10')
 
